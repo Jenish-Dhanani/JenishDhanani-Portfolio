@@ -20,6 +20,9 @@ const Nav = ()=>{
             case 3:
                 document.documentElement.style.setProperty('--color-primary','#F0A500')
                 break;
+            case 4:
+                document.documentElement.style.setProperty('--color-primary','#00a884')
+                break;
             default:
                 break;
         }
@@ -38,6 +41,7 @@ const Nav = ()=>{
                     <div className='theme-div theme-1' onClick={()=>{changeTheme(1)}}></div>
                     <div className='theme-div theme-2' onClick={()=>{changeTheme(2)}}></div>
                     <div className='theme-div theme-3' onClick={()=>{changeTheme(3)}}></div>
+                    <div className='theme-div theme-4' onClick={()=>{changeTheme(4)}}></div>
                 </div>
             </div>
         </nav>

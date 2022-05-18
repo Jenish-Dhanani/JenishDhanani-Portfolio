@@ -44,6 +44,13 @@ const Experience = ()=>{
                         <div className='experience-details'>
                             <BsPatchCheckFill className='experience-details-icon'/>
                             <div>
+                                <h4>Angular</h4>
+                                <small className='text-light'>Intermediate</small>
+                            </div>
+                        </div>
+                        <div className='experience-details'>
+                            <BsPatchCheckFill className='experience-details-icon'/>
+                            <div>
                                 <h4>React</h4>
                                 <small className='text-light'>Intermediate</small>
                             </div>
@@ -54,7 +61,7 @@ const Experience = ()=>{
                 {/* End of frontend */}
 
                 <div className="experience-backend">
-                <h2>Backtend Development</h2>
+                    <h2>Backtend Development</h2>
                     <div className="experience-content">
                         <div className='experience-details'>
                             <BsPatchCheckFill className='experience-details-icon'/>
@@ -78,7 +85,18 @@ const Experience = ()=>{
                             </div>
                         </div>
                     </div>
+                    <h2 style={{marginTop:"2rem"}}>Other Programming Languages</h2>
+                    <div className="experience-content">
+                        <div className='experience-details'>
+                            <BsPatchCheckFill className='experience-details-icon'/>
+                            <div>
+                                <h4>C, C++, JAVA</h4>
+                                <small className='text-light'>Experienced</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </section>
     )

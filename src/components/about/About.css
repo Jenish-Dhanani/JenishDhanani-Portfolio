@@ -7,17 +7,12 @@
 .about-me{
     width: 100%;
     aspect-ratio: 1/1;
-    border-radius: 2rem;
-    background: linear-gradient(
-        45deg,
-        /* transparent, */
-        var(--color-bg-variant),
-        var(--color-primary),
-        /* transparent */
-        var(--color-bg-variant)
-    );
-    display: grid;
-    place-items: center;
+    border-radius: 50%;
+    background: var(--color-primary);
+    background: radial-gradient(var(--color-primary), var(--color-bg));
+    /* display: grid; */
+    /* place-items: center; */
+    overflow: hidden;
 }
 
 .about-me-img{
