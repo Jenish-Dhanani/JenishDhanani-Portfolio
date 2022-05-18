@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import me from '../../assets/me-about.jpg'
+import me from '../../assets/me-about1.png'
 import {FaAward} from 'react-icons/fa'
 import {VscFolderLibrary} from 'react-icons/vsc'
 
@@ -35,7 +35,7 @@ const About = ()=>{
                         </div>
                     </div>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur ipsam temporibus vero eveniet corporis cum, nisi esse necessitatibus, a, fuga ad? Nam temporibus placeat ratione voluptatum cumque fuga omnis atque?
+                        I am Jenish Dhanani, Seeking a beginner role to enhance and explore my technical knowledge gained at Veer Narmad South Gujarat University in the last three years. I hold a BCA degree from Sutex Bank College Of Computer Science And Application college, and currently I am studying "MSc. IT" in Dhirubhai Ambani Institute Of Information And Communication Technology (DAIICT). I am skilled in Graphics, frontend programming as well as backend programming and also in database management.
                     </p>
                     <a href="#contact" className='btn btn-primary'>Let's Talk</a>
                 </div>

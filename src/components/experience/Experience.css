@@ -20,6 +20,7 @@
 
 .experience-container > div:hover{
     /* background: var(--color-bg-variant);*/
+    backdrop-filter: blur(1px);
     border-color: var(--color-primary);
     cursor: default;
 }

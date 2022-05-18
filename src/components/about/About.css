@@ -10,23 +10,30 @@
     border-radius: 2rem;
     background: linear-gradient(
         45deg,
-        transparent,
+        /* transparent, */
+        var(--color-bg-variant),
         var(--color-primary),
-        transparent
+        /* transparent */
+        var(--color-bg-variant)
     );
     display: grid;
     place-items: center;
 }
 
 .about-me-img{
+    height: 100%;
     border-radius: 2rem;
     overflow: hidden;
-    transform: rotate(10deg);
     transition: var(--transition);
 }
 
-.about-me-img:hover{
-    transform: rotate(0);
+.about-me-img img{
+    transform: scale(0.9);
+    transition: var(--transition);
+}
+
+.about-me-img:hover img{
+    transform: scale(1);
 }
 
 .about-cards{
@@ -46,8 +53,9 @@
 
 .about-card:hover{
     background: transparent;
-    border-color: var(--color-bg-variant);
+    border-color: var(--color-primary);
     cursor: default;
+    backdrop-filter: blur(1px);
 }
 
 .about-icon{
@@ -65,6 +73,8 @@
     color: var(--color-light);
 }
 .about-content p{
+    padding: 1rem;
+    backdrop-filter: blur(1px);
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
 }

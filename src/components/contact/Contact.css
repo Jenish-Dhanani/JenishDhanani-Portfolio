@@ -21,6 +21,7 @@
 }
 
 .contact-option:hover{
+    backdrop-filter: blur(1px);
     background: transparent;
     border-color: var(--color-primary);
 }
@@ -56,6 +57,10 @@ input,textarea{
     border: 2px solid var(--color-primary);
     resize: none;
     color: var(--color-white);
+}
+
+input:focus,textarea:focus{
+    backdrop-filter: blur(1px);
 }
 
 /* media query for medium device */

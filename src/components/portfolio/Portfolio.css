@@ -13,6 +13,7 @@
 }
 
 .portfolio-item:hover{
+    backdrop-filter: blur(5px);
     border-color: var(--color-primary);
     background: transparent;
 }
