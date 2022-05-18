@@ -31,7 +31,7 @@ const Contact = ()=>{
                         <a href="https://wa.me/919712294506?text=Hello,%20Jenish%20Dhanani" target="_blank" rel="noreferrer">Send a message</a>
                     </div>
                 </div>
-                <form action="">
+                <form action="https://formspree.io/f/moqrybve" method='post'>
                     <input type="text" name="name" placeholder='Your Full Name' required />
                     <input type="email" name='email' placeholder='Your Email' required />
                     <textarea name='message' rows="7" placeholder='Your Message' required></textarea>
