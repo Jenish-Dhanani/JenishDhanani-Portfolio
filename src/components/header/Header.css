@@ -1,0 +1,58 @@
+header{
+    height: 100vh;
+    padding-top: 5rem;
+    overflow: hidden;
+}
+
+header .header-container{
+    text-align: center;
+    height: 100vh;
+    position: relative;
+}
+
+.cv-div{
+    display: flex;
+    margin-top: 2.5rem;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.me{
+    background: linear-gradient( var(--color-primary),transparent);
+    width: 22rem;
+    height: max-content;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.socials{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.8rem;
+    position:absolute;
+    left: 0;
+    bottom: 8rem;
+}
+
+.scroll-down{
+    position: absolute;
+    right: 0;
+    bottom: 10rem;
+    transform: rotate(90deg);
+    font-size: smaller;
+}
+
+@media screen and (max-width:600px){
+    header{
+        padding-top: 2rem;
+        height: 100vh;
+    }
+    .socials, .scroll-down{
+        display: none;
+    }
+}
