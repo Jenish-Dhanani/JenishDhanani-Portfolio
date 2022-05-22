@@ -8,6 +8,24 @@ import Img4 from '../../assets/portfolio4.jpg'
 import Img5 from '../../assets/portfolio5.png'
 import Img6 from '../../assets/portfolio6.jpg'
 
+const arr =[
+    {
+        "title":"TeamMeet",
+        "link":"",
+        "image":Img1
+    },
+    {
+        "title":"InvoiceReady",
+        "link":"https://github.com/Jenish-Dhanani/InvoiceReady",
+        "image":Img2
+    },
+    {
+        "title":"AuctionPoint",
+        "link":"",
+        "image":Img3
+    },
+]
+
 const Portfolio = ()=>{
 
     return (
@@ -16,48 +34,26 @@ const Portfolio = ()=>{
             <h2>Portfolio</h2>
 
             <div className="container portfolio-container">
-                <div className="portfolio-item">
+                {/* <div className="portfolio-item">
                     <div className="portfolio-item-image">
                         <img src={Img1} alt="" />
                     </div>
                     <h3>Title</h3>
                     <a href="#" className='btn btn-primary'>Live Demo</a>
-                </div>
-                <div className="portfolio-item">
-                    <div className="portfolio-item-image">
-                        <img src={Img2} alt="" />
-                    </div>
-                    <h3>Title</h3>
-                    <a href="#" className='btn btn-primary'>Live Demo</a>
-                </div>
-                <div className="portfolio-item">
-                    <div className="portfolio-item-image">
-                        <img src={Img3} alt="" />
-                    </div>
-                    <h3>Title</h3>
-                    <a href="#" className='btn btn-primary'>Live Demo</a>
-                </div>
-                <div className="portfolio-item">
-                    <div className="portfolio-item-image">
-                        <img src={Img4} alt="" />
-                    </div>
-                    <h3>Title</h3>
-                    <a href="#" className='btn btn-primary'>Live Demo</a>
-                </div>
-                <div className="portfolio-item">
-                    <div className="portfolio-item-image">
-                        <img src={Img5} alt="" />
-                    </div>
-                    <h3>Title</h3>
-                    <a href="#" className='btn btn-primary'>Live Demo</a>
-                </div>
-                <div className="portfolio-item">
-                    <div className="portfolio-item-image">
-                        <img src={Img6} alt="" />
-                    </div>
-                    <h3>Title</h3>
-                    <a href="#" className='btn btn-primary'>Live Demo</a>
-                </div>
+                </div> */}
+                {
+                    arr.map((item, index)=>{
+                        return (
+                            <div className="portfolio-item" key={index}>
+                                <div className="portfolio-item-image">
+                                    <img src={item.image} alt="" />
+                                </div>
+                                <h3>{item.title}</h3>
+                                <a href={item.link} className='btn btn-primary' target="_blank" rel="noreferrer">CheckOut</a>
+                            </div>
+                        )
+                    })
+                }
             </div>
         </section>
     )

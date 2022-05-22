@@ -86,7 +86,7 @@ const Experience = ()=>{
                         </div>
                     </div>
                     <h2 style={{marginTop:"2rem"}}>Other Programming Languages</h2>
-                    <div className="experience-content">
+                    <div className="experience-content" style={{gridTemplateColumns:"1fr"}}>
                         <div className='experience-details'>
                             <BsPatchCheckFill className='experience-details-icon'/>
                             <div>
